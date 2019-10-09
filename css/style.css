@@ -20,14 +20,14 @@ html {
   box-sizing: border-box;
 }
 
-::before,
- ::after {
+*, *::before,
+ *::after {
    box-sizing: inherit;
 }
 body {
   margin: 0;
   padding: 0;
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -125,6 +125,7 @@ img {
   font-size: 14px;
   line-height: 26px;
   color: #000000;
+  font-weight: bold;
 }
 
 .page-navigation,
@@ -145,8 +146,10 @@ img {
   color: #766357;
 }
 
-.page-footer-hashtag {
+.hashtag a {
   font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
 }
 
 /*FORM*/
@@ -172,6 +175,12 @@ img {
 
 .search-item input:active {
   background-color: #FFFFFF;
+}
+
+input::placeholder {
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
 }
 
 /*INDEX*/
@@ -244,7 +253,7 @@ img {
   opacity: 0.5;
 }
 
-.results-sum {
+.results-total {
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
@@ -263,14 +272,14 @@ img {
   font-weight: normal;
   text-decoration: underline;
   text-decoration-color: #81B3D2;
-  text-decoration-style: dashed;
+  text-decoration-style: dotted;
 }
 
-.result-sort-item a:hover {
+.result-sort-item a[href]:hover {
   color: #81B3D2;
 }
 
-.result-sort-item a:active {
+.result-sort-item a[href]:active {
   color: #000000;
   text-decoration: none;
 }
