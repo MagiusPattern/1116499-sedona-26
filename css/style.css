@@ -1,7 +1,8 @@
 @font-face {
   font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 400;
+  font-style: normal;
+
   src: local('PT Sans'),
        url('/fonts/ptsans.woff2') format('woff2'),
        url('/fonts/ptsans.woff') format('woff');
@@ -9,8 +10,9 @@
 
 @font-face {
   font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 700;
+  font-style: normal;
+
   src: local('PT Sans'),
        url('/fonts/ptsansbold.woff2') format('woff2'),
        url('/fonts/ptsansbold.woff') format('woff');
@@ -27,12 +29,15 @@ html {
 body {
   margin: 0;
   padding: 0;
+
+  text-transform: uppercase;
+
+  color: #000000;
+
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
-  line-height: 21px;
   font-weight: 400;
-  color: #000000;
-  text-transform: uppercase;
+  line-height: 21px;
 }
 
 a {
@@ -46,20 +51,23 @@ img {
 .reset-list {
   margin: 0;
   padding: 0;
+
   list-style: none;
 }
 
 /*BUTTON*/
 .button {
-  font-size: 14px;
-  line-height: 21px;
   text-align: center;
-  color: #FFFFFF;
-  font-weight: bold;
   vertical-align: middle;
   text-transform: uppercase;
-  background-color: #FFFFFF;
+
+  color: #FFFFFF;
   border: none;
+  background-color: #FFFFFF;
+
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 21px;
 }
 
 .button-brown {
@@ -91,8 +99,8 @@ img {
 }
 
 .button-brown:active {
-  background-color: #503E33;
   color: rgba(132, 120, 112, 0.3);
+  background-color: #503E33;
 }
 
 .button-search,
@@ -108,24 +116,26 @@ img {
 
 .button-search:active,
 .social-button:active {
-  background-color: #5496BD;
   color: rgba(135, 181, 209, 0.3);
+  background-color: #5496BD;
 }
 
 .button-outline-white {
   color: #FFFFFF;
-  font-weight: normal;
   border: 1px solid #FFFFFF;
   background: transparent;
+
+  font-weight: normal;
 }
 
 /* HEADER FOOTER*/
 .page-navigation,
 .page-footer  {
-  font-size: 14px;
-  line-height: 26px;
   color: #000000;
+
+  font-size: 14px;
   font-weight: bold;
+  line-height: 26px;
 }
 
 .page-navigation,
@@ -148,8 +158,8 @@ img {
 
 .hashtag a {
   font-size: 21px;
-  line-height: 26px;
   font-weight: bold;
+  line-height: 26px;
 }
 
 /*FORM*/
@@ -158,15 +168,16 @@ img {
   background-image: url("img/map.png");
 }
 
-.search-data {
+.search-item {
   font-size: 14px;
-  line-height: 26px;
   font-weight: bold;
+  line-height: 26px;
 }
 
 .search-item input {
-  font: inherit;
   background-color: #F2F2F2;
+
+  font: inherit;
 }
 
 .search-item input:hover {
@@ -178,9 +189,10 @@ img {
 }
 
 input::placeholder {
+  color: #000000;
+
   font-size: 14px;
   line-height: 26px;
-  color: #000000;
 }
 
 /*INDEX*/
@@ -190,8 +202,8 @@ input::placeholder {
 
 .intro-title {
   font-size: 21px;
-  line-height: 26px;
   font-weight: bold;
+  line-height: 26px;
 }
 
 .reason-item,
@@ -216,15 +228,16 @@ input::placeholder {
 
 .search-info-title {
   font-size: 30px;
-  line-height: 36px;
   font-weight: bold;
+  line-height: 36px;
 }
 
 /*HOTELS*/
 .filter-form {
+  color: #FFFFFF;
   background-color: #D7E8F2;
   background-image: url("img/background photo.jpg");
-  color: #FFFFFF;
+
   font-size: 14px;
   line-height: 21px;
 }
@@ -249,28 +262,31 @@ input::placeholder {
 }
 
 .filter-input:disabled {
-  color: #6A6A6A;
   opacity: 0.5;
+  color: #6A6A6A;
 }
 
 .results-total {
   font-size: 21px;
-  line-height: 26px;
   font-weight: bold;
+  line-height: 26px;
 }
 
 .sort h2 {
   font-size: 12px;
-  line-height: 18px;
   font-weight: normal;
+  line-height: 18px;
 }
 
 .result-sort-item a {
-  color: #B2B2B2;
-  font-size: 12px;
-  line-height: 18px;
-  font-weight: normal;
   text-decoration: underline;
+
+  color: #B2B2B2;
+
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 18px;
+
   text-decoration-color: #81B3D2;
   text-decoration-style: dotted;
 }
@@ -280,20 +296,23 @@ input::placeholder {
 }
 
 .result-sort-item a[href]:active {
-  color: #000000;
   text-decoration: none;
+
+  color: #000000;
 }
 
 .result-sort-item-current a {
-  color: #81B3D2;
   text-decoration: none;
+
+  color: #81B3D2;
 }
 
 .results-list {
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: normal;
   background-color: #FEFEFE;
+
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 21px;
 }
 
 .result-list-item {
@@ -302,11 +321,12 @@ input::placeholder {
 
 .result-list-item h3 {
   font-size: 21px;
-  line-height: 26px;
   font-weight: bold;
+  line-height: 26px;
 }
 
 .results-list-item .item-rating {
   text-align: right;
+
   background-color: #F2F2F2;
 }
