@@ -8,12 +8,12 @@
 	</head>
 	<body>
 		<div class="container">
-      <header class="page-header flex-header">
-        <a class="page-header-logo flex-logo">
+      <header class="page-header">
+        <a class="page-header-logo">
           <img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип Седоны">
         </a>
   			<nav class="page-navigation">
-  				<ul class="site-navigation reset-list  flex-navigation">
+  				<ul class="site-navigation reset-list">
             <li><a href="#">Информация</a></li>
   					<li><a href="#">Фото и видео</a></li>
   					<li><a href="#">Карта штата</a></li>
@@ -37,45 +37,45 @@
         </section>
   			<section class="reasons">
   				<h2 class="visually-hidden">Причины посетить Седону</h2>
-  			  <ol class="reasons-list reset-list flex-reasons-list">
-            <li class="reason-item reason-item-blue flex-item">
-              <div class="flex-main-item">
+  			  <ol class="reasons-list reset-list">
+            <li class="reason-item reason-item-blue main-reason">
+              <div class="main-reason-item">
                 <h3>Настоящий городок</h3>
                 <p>— №1 —</p>
                 <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
               </div>
-              <div class="flex-img">
+              <div class="main-reason-img">
                 <img src="img/city.jpg" width="800" height="256" alt="Городок">
               </div>
             </li>
-            <li class="reason-item reason-item-blue flex-item">
-              <div class="flex-img">
+            <li class="reason-item reason-item-blue main-reason">
+              <div class="main-reason-img">
                 <img src="img/diablobridge.jpg" width="800" height="256" alt="Мост Дьявола">
               </div>
-              <div class="flex-main-item">
+              <div class="main-reason-item">
                 <h3>Там есть мост дьявола</h3>
                 <p>— №2 —</p>
                 <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
               </div>
             </li>
-            <li class="flex-item">
+            <li class="main-reason">
               <ul class="reasons-gray reset-list reason-sublist">
                 <li class="reason-item">
-                  <div class="flex-main-item">
+                  <div class="main-reason-item">
                     <h3>Небольшая площадь</h3>
                     <p>— №3 —</p>
                     <p>Все достопримечательности находятся очень близко</p>
                   </div>
                 </li>
                 <li class="reason-item">
-                  <div class="flex-main-item">
+                  <div class="main-reason-item">
                     <h3>Красивая дорога</h3>
                     <p>— №4 —</p>
                     <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
                   </div>
                 </li>
                 <li class="reason-item">
-                  <div class="flex-main-item">
+                  <div class="main-reason-item">
                     <h3>Мало туристов</h3>
                     <p>— №5 —</p>
                     <p>Большинство едет в Гранд-Каньон и толпится там</p>
@@ -83,19 +83,19 @@
                 </li>
               </ul>
             </li>
-            <li class="flex-item">
+            <li class="main-reason">
               <ul class="reset-list reason-sublist">
-                <li class="reason-subitem flex-subitem">
+                <li class="reason-subitem">
                 <!--CSS:<img src="img/icons/house.svg"  width="75" height="72" alt="Жилье">-->
                   <h3>Жильё</h3>
                   <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
                 </li>
-                <li class="reason-subitem flex-subitem">
+                <li class="reason-subitem">
                 <!--CSS:<img src="img/icons/food.svg"  width="74" height="70" alt="Еда">-->
                   <h3>Еда</h3>
                   <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                 </li>
-                <li class="reason-subitem flex-subitem">
+                <li class="reason-subitem">
                 <!--CSS:<img src="img/icons/gift.svg"  width="64" height="76" alt="Сувениры">-->
                   <h3>Сувениры</h3>
                   <p>Не только китайского, но и местного производства!</p>
@@ -106,15 +106,14 @@
         </section>
 
   			<section class="search-info">
-          <div class="flex-search">
+          <div class="search-details">
             <p class="search-info-title">Заинтересовались?</p>
     			  <p>Укажите предполагаемые даты поездки,</p>
     			  <p>и мы покажем вам лучше предложения гостиниц в Седоне</p>
     			  <button class="button button-brown" type="button">Поиск гостиницы в Седоне</button>
           </div>
-          <section class="search">
-            <!--CSS:<img src="img/map.png" width="1200" height="594" alt="Седона на карте штата Аризона">-->
-            <form class="search-form" method="get" action="hotels.html">
+          <section class="search-modal">
+            <form class="search-form" method="get" action="https://echo.htmlacademy.ru">
               <p class="search-item">
                 <label class="search-data-label" for="check-in-date">Дата заезда:</label>
                 <input class="search-data-input" placeholder="24 апреля 2017" type="text" id="check-in-date" name="check-in-date">
@@ -146,29 +145,32 @@
               <button class="button button-blue button-search" type="submit">Найти</button>
             </form>
           </section>
+          <div class="search-map">
+            <img src="img/map.png" width="1200" height="594" alt="Седона на карте штата Аризона">
+          </div>
         </section>
   		</main>
 
-      <footer class="page-footer flex-footer">
+      <footer class="page-footer">
         <p class="page-footer-hashtag">
         	<a  class="hashtag" href="#">#visitsedona</a>
         </p>
         <section class="page-footer-social social">
         	<h2 class="visually-hidden">Седона в соцсетях</h2>
-          <ul class="reset-list flex-social">
-        		<li class="flex-button">
+          <ul class="reset-list social-list">
+        		<li class="social-item">
               <a class="social-button" href="#" aria-label="Переход на страницу Седоны в Twitter">
-                <img src="img/icons/twitter.svg" width="17" height="15" alt="Twitter">
+                <img src="img/icons/twitter.svg" width="46" height="48" alt="Twitter">
               </a>
             </li>
-        		<li class="flex-button">
+        		<li class="social-item">
               <a class="social-button" href="#" aria-label="Переход на страницу Седоны в Facebook">
-                <img src="img/icons/fb.svg" width="12" height="22" alt="Facebook">
+                <img src="img/icons/fb.svg" width="46" height="48" alt="Facebook">
               </a>
             </li>
-        		<li class="flex-button">
+        		<li class="social-item">
               <a class="social-button" href="#" aria-label="Переход на страницу Седоны на Youtube">
-                <img src="img/icons/youtube.svg" width="20" height="16" alt="Youtube">
+                <img src="img/icons/youtube.svg" width="46" height="48" alt="Youtube">
               </a>
             </li>
         	</ul>

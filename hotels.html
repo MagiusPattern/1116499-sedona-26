@@ -8,12 +8,12 @@
 	</head>
 	<body>
     <div class="container">
-      <header class="page-header  flex-header">
-        <a class="page-header-logo flex-logo" href="index.html">
+      <header class="page-header">
+        <a class="page-header-logo" href="index.html">
           <img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип Седоны">
         </a>
         <nav class="page-navigation">
-          <ul class="site-navigation reset-list flex-navigation">
+          <ul class="site-navigation reset-list">
             <li><a href="#">Информация</a></li>
             <li><a href="#">Фото и видео</a></li>
             <li><a href="#">Карта штата</a></li>
@@ -23,12 +23,12 @@
       </header>
 
       <main>
-        <div class="flex-hotels">
+        <div class="hotels-info">
           <h1 class="visually-hidden">Гостиницы Седоны</h1>
           <section class="filters">
             <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
               <h2 class="visually-hidden">Форма фильтрации</h2>
-              <!--CSS:<img src="img/background photo.jpg"  width="1200" height="800" alt="Вид Седоны">-->
+              <!--CSS:<img src="img/background-photo.jpg"  width="1200" height="800" alt="Вид Седоны">-->
               <fieldset>
                 <legend>Инфраструктура:</legend>
                   <ul class="reset-list">
@@ -63,16 +63,16 @@
                     </li>
                   </ul>
               </fieldset>
-              <div class="flex-price">
+              <div class="filter-price">
                 <fieldset>
                   <legend>Стоимость в сутки (Р):</legend>
                 <!--Фильтр по стоимости-->
-                  <button class="button button-filter button-outline-white" type="submit">Показать</button>
                 </fieldset>
+                <button class="button button-filter button-outline-white" type="submit">Показать</button>
               </div>
             </form>
           </section>
-          <div class="flex-results">
+          <div class="search-results">
             <div class="results-wrapper">
               <p class="results-total">Найдено: 3</p>
               <section class="sort">
@@ -104,63 +104,63 @@
               <h2 class="visually-hidden">Результаты</h2>
               <ul class="results-list reset-list">
                 <li class="result-list-item hotel">
-                  <div class="flex-hotel-img">
-                    <img class="hotel-img" src="img/hotel-amara.jpg" width="135" height="90" alt="Amara Resort & Spa">
+                  <div class="hotel-img">
+                    <img src="img/hotel-amara.jpg" width="135" height="90" alt="Amara Resort & Spa">
                   </div>
-                  <div class="flex-hotel-info">
+                  <div class="hotel-info">
                     <h3 class="hotel-name">Amara Resort & Spa</h3>
-                    <div class="flex-type-price">
+                    <div class="hotel-type-price">
                       <p class="hotel-type">Гостиница</p>
                       <p class="hotel-price">От 4000 р.</p>
                     </div>
                     <a class="button button-blue hotel-button" href="#">Подробнее</a>
                     <a class="button button-brown hotel-button" href="#">Забронировать</a>
                   </div>
-                  <div class="flex-hotel-rating">
+                  <div class="hotel-rating">
                     <!--CSS:<img src="img/icons/star.svg" width="18" height="17" alt="Оценка в звездах">-->
                     <!--CSS:<img src="img/icons/star.svg" width="18" height="17" alt="Оценка в звездах">-->
                     <!--CSS:<img src="img/icons/star.svg" width="18" height="17" alt="Оценка в звездах">-->
                     <!--CSS:<img src="img/icons/star.svg" width="18" height="17" alt="Оценка в звездах">-->
-                    <p class="hotel-rating">Рейтинг: 8,5</p>
+                    <p class="item-rating">Рейтинг: 8,5</p>
                   </div>
                 </li>
                 <li class="result-list-item hotel">
-                  <div class="flex-hotel-img">
-                    <img  class="hotel-img" src="img/motel-desertquail.jpg" width="135" height="90" alt="Desert Quail Inn">
+                  <div class="hotel-img">
+                    <img src="img/motel-desertquail.jpg" width="135" height="90" alt="Desert Quail Inn">
                   </div>
-                  <div class="flex-hotel-info">
+                  <div class="hotel-info">
                     <h3 class="hotel-name">Desert Quail Inn</h3>
-                    <div class="flex-type-price">
+                    <div class="hotel-type-price">
                       <p class="hotel-type">Мотель</p>
                       <p class="hotel-price">От 3000 р.</p>
                     </div>
                     <a class="button button-blue hotel-button" href="#">Подробнее</a>
                     <a class="button button-brown hotel-button" href="#">Забронировать</a>
                   </div>
-                  <div class="flex-hotel-rating">
+                  <div class="hotel-rating">
                     <!--CSS:<img src="img/icons/star.svg" width="18" height="17" alt="Оценка в звездах">-->
                     <!--CSS:<img src="img/icons/star.svg" width="18" height="17" alt="Оценка в звездах">-->
                     <!--CSS:<img src="img/icons/star.svg" width="18" height="17" alt="Оценка в звездах">-->
-                    <p class="hotel-rating">Рейтинг: 8,9</p>
+                    <p class="item-rating">Рейтинг: 8,9</p>
                   </div>
                 </li>
                 <li class="result-list-item hotel">
-                  <div class="flex-hotel-img">
-                    <img  class="hotel-img" src="img/villas-pocodiablo.jpg" width="135" height="90" alt="Villas at Poco Diablo">
+                  <div class="hotel-img">
+                    <img src="img/villas-pocodiablo.jpg" width="135" height="90" alt="Villas at Poco Diablo">
                   </div>
-                  <div class="flex-hotel-info">
+                  <div class="hotel-info">
                     <h3 class="hotel-name">Villas at Poco Diablo</h3>
-                    <div class="flex-type-price">
+                    <div class="hotel-type-price">
                       <p class="hotel-type">Апартаменты</p>
                       <p class="hotel-price">От 2000 р.</p>
                     </div>
                     <a class="button button-blue hotel-button" href="#">Подробнее</a>
                     <a class="button button-brown hotel-button" href="#">Забронировать</a>
                   </div>
-                  <div class="flex-hotel-rating">
+                  <div class="hotel-rating">
                     <!--CSS:<img src="img/icons/star.svg" width="18" height="17" alt="Оценка в звездах">-->
                     <!--CSS:<img src="img/icons/star.svg" width="18" height="17" alt="Оценка в звездах">-->
-                    <p class="hotel-rating">Рейтинг: 9,2</p>
+                    <p class="item-rating">Рейтинг: 9,2</p>
                   </div>
                 </li>
               </ul>
@@ -169,24 +169,24 @@
         </div>
       </main>
 
-      <footer class="page-footer flex-footer">
+      <footer class="page-footer">
         <p class="page-footer-hashtag">
         	<a  class="hashtag" href="#">#visitsedona</a>
         </p>
         <section class="page-footer-social social">
         	<h2 class="visually-hidden">Седона в соцсетях</h2>
-          <ul class="reset-list flex-social">
-        		<li class="flex-button">
+          <ul class="reset-list social-list">
+        		<li class="social-item">
               <a class="social-button" href="#" aria-label="Переход на страницу Седоны в Twitter">
                 <img src="img/icons/twitter.svg" width="17" height="15" alt="Twitter">
               </a>
             </li>
-        		<li class="flex-button">
+        		<li class="social-item">
               <a class="social-button" href="#" aria-label="Переход на страницу Седоны в Facebook">
                 <img src="img/icons/fb.svg" width="12" height="22" alt="Facebook">
               </a>
             </li>
-        		<li class="flex-button">
+        		<li class="social-item">
               <a class="social-button" href="#" aria-label="Переход на страницу Седоны на Youtube">
                 <img src="img/icons/youtube.svg" width="20" height="16" alt="Youtube">
               </a>
