@@ -29,6 +29,7 @@ html {
 body {
   margin: 0;
   padding: 0;
+  background-color: #F2F2F2;
 
   text-transform: uppercase;
 
@@ -82,6 +83,17 @@ img {
   background-color: #766357;
 }
 
+.button-search,
+.social-button {
+  color: #FFFFFF;
+  background-color: #81B3D2;
+  width: 46px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .button-blue {
   width: 458px;
   height: 58px;
@@ -113,11 +125,7 @@ img {
   background-color: #503E33;
 }
 
-.button-search,
-.social-button {
-  color: #FFFFFF;
-  background-color: #81B3D2;
-}
+
 
 .button-search:hover,
 .social-button:hover {
@@ -167,11 +175,21 @@ img {
   width: 140px;
   left: 50%;
   margin-left: -70px;
+  position: absolute;
 }
 
 .site-navigation li {
   width: 300px;
-  align-items: center;
+}
+
+.site-navigation li:nth-child(1),
+.site-navigation li:nth-child(2) {
+  text-align: left;
+}
+
+.site-navigation li:nth-child(3),
+.site-navigation li:nth-child(4) {
+  text-align: right;
 }
 
 .site-navigation a {
@@ -190,7 +208,6 @@ img {
 .page-footer {
   display: flex;
   height: 120px;
-  justify-content: space-between;
 }
 
 .page-footer-hashtag {
@@ -222,6 +239,12 @@ img {
 
 .developed-by {
   width: 197px;
+}
+.page-footer-hashtag,
+.page-footer-social,
+.page-footer-developed-by {
+  width: 400px;
+  text-align: center;
 }
 
 /*FORM*/
@@ -270,10 +293,6 @@ input::placeholder {
   background-color: #FFFFFF;
 }
 
-.search-map {
-  height: 560px;
-}
-
 /*INDEX*/
 .intro {
   display: flex;
@@ -287,7 +306,7 @@ input::placeholder {
 .intro .intro-img {
   width: 459px;
   margin-top: 132px;
-  margin-left: 410px;
+  margin: 0 auto;
   background: transparent;
 }
 
@@ -295,7 +314,7 @@ input::placeholder {
 .reasons,
 .search-info,
 .hotels-info {
-  margin:0;
+  margin: 0;
 }
 
 .intro-text {
@@ -344,6 +363,20 @@ input::placeholder {
 .reason-subitem h3 {
   font-size: 21px;
   font-weight: bold;
+}
+
+.reason-subitem:nth-child(1) {
+  background-image: url("../img/icons/house.svg");
+  background-repeat: no-repeat;
+}
+
+.reason-subitem:nth-child(2) {
+  background-image: url("../img/icons/food.svg");
+  background-repeat: no-repeat;
+}
+.reason-subitem:nth-child(3) {
+  background-image: url("../img/icons/gift.svg");
+  background-repeat: no-repeat;
 }
 
 .reasons-list {
