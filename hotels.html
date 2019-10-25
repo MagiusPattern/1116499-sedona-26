@@ -64,11 +64,21 @@
                   </ul>
               </fieldset>
               <div class="filter-price">
-                <fieldset>
-                  <legend>Стоимость в сутки (Р):</legend>
-                <!--Фильтр по стоимости-->
+                <fieldset class="filter-range">
+                  <legend class="filter-range-title">Стоимость в сутки (Р):</legend>
+									<div class="price-controls">
+										<label class="min-price">от <input type="text" name="min-price" value="0"></label>
+										<label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+									</div>
+									<div class="range-controls">
+										 <div class="scale">
+											 <div class="bar"></div>
+										 </div>
+										 <div class="range-toggle range-toggle-min"></div>
+										 <div class="range-toggle range-toggle-max"></div>
+									</div>
+									<button class="button-transparent" type="submit">Показать</button>
                 </fieldset>
-                <button class="button button-filter button-outline-white" type="submit">Показать</button>
               </div>
             </form>
           </section>
@@ -85,15 +95,15 @@
                 <ul class="reset-list sort-by-priority">
                   <li class="result-sort-item">
                     <a arial-label="сортировать по возрастанию">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-                        <path fill="#231F20" d="M5.5 0L0 10h11z"/>
+                      <svg class="sort-direction-button" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                        <path d="M5.5 0L0 10h11z"/>
                       </svg>
                     </a>
                   </li>
                   <li class="result-sort-item">
                     <a arial-label="сортировать по убыванию" active>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-                        <path fill="#231F20" d="M5.5 10L0 0h11"/>
+                      <svg class="sort-direction-button" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                        <path d="M5.5 10L0 0h11"/>
                       </svg>
                     </a>
                   </li>
@@ -172,17 +182,17 @@
           <ul class="reset-list social-list">
         		<li class="social-item">
               <a class="social-button" href="#" aria-label="Переход на страницу Седоны в Twitter">
-                <img src="img/icons/twitter.svg" alt="Twitter">
+                <img src="img/icons/twitter.svg" width="17" height="15" alt="Twitter">
               </a>
             </li>
         		<li class="social-item">
               <a class="social-button" href="#" aria-label="Переход на страницу Седоны в Facebook">
-                <img src="img/icons/fb.svg" alt="Facebook">
+                <img src="img/icons/fb.svg" width="12" height="22" alt="Facebook">
               </a>
             </li>
         		<li class="social-item">
               <a class="social-button" href="#" aria-label="Переход на страницу Седоны на Youtube">
-                <img src="img/icons/youtube.svg" alt="Youtube">
+                <img src="img/icons/youtube.svg" width="20" height="16" alt="Youtube">
               </a>
             </li>
         	</ul>
