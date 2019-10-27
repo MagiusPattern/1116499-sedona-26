@@ -1,19 +1,19 @@
 @font-face {
-  font-family: 'PT Sans-Regular';
+  font-family: 'PT Sans';
   font-weight: 400;
   font-style: normal;
 
-  src: local('PT Sans'),
+  src: local('PTSans-Regular'),
        url('../fonts/ptsans.woff2') format('woff2'),
        url('../fonts/ptsans.woff') format('woff');
 }
 
 @font-face {
-  font-family: 'PT Sans-Bold';
+  font-family: 'PT Sans';
   font-weight: 700;
   font-style: normal;
 
-  src: local('PT Sans'),
+  src: local('PTSans-Bold'),
        url('../fonts/ptsansbold.woff2') format('woff2'),
        url('../fonts/ptsansbold.woff') format('woff');
 }
@@ -91,8 +91,8 @@ img {
 }
 
 .search-details .button-brown {
-  font-size: 21px;
-  margin-top: 9px;
+  font-size: 18px;
+  margin-top: 18px;
   padding-left: 117px;
   padding-right: 117px;
 }
@@ -181,8 +181,6 @@ img {
 
   padding-top: 15px;
   padding-bottom: 15px;
-  padding-left: 71px;
-  padding-right: 71px;
 }
 
 .page-navigation,
@@ -211,23 +209,36 @@ img {
   width: 300px;
 }
 
-.site-navigation li:nth-child(1),
-.site-navigation li:nth-child(2) {
+.site-navigation li:nth-child(1) {
   text-align: left;
+  padding-left: 71px;
 }
 
-.site-navigation li:nth-child(3),
+.site-navigation li:nth-child(2) {
+  text-align: left;
+  padding-left: 13px;
+}
+
+.site-navigation li:nth-child(3) {
+  text-align: right;
+  padding-right: 16px;
+}
+
 .site-navigation li:nth-child(4) {
   text-align: right;
+  padding-right: 73px;
 }
 
 .site-navigation a {
   color: #000000;
 }
 
-.site-navigation a[href]:hover,
-.site-navigation a[href]:focus {
+.site-navigation a[href]:hover {
   color: #81B3D2;
+}
+
+.site-navigation a[href]:active {
+  color: #B2B2B2;
 }
 
 .site-navigation-current a {
@@ -242,7 +253,7 @@ img {
 }
 
 .page-footer-index {
-  margin-top: -125px;
+  margin-top: -128px;
   background-color: rgba(255,255,255,0.9);
   position: relative;
 }
@@ -264,6 +275,7 @@ img {
 .social-list {
   display: flex;
   justify-content: center;
+  margin-left: -1px;
 
   width: 100%;
 }
@@ -275,12 +287,6 @@ img {
 .social-list li:nth-child(2),
 .social-list li:nth-child(3) {
   margin-left: 6px;
-}
-
-
-.social-button img {
-  width: 15px;
-  height: 17px;
 }
 
 .developed-by {
@@ -300,11 +306,32 @@ img {
 
   text-align: center;
 }
-
 .developed-by-link {
-  margin-left: 10px;
-  margin-top: 5px;
+  margin-left: 12px;
+  margin-top: 9px;
 }
+
+.page-footer-index .developed-by-link {
+  margin-left: 6px;
+}
+
+.developed-by-link path,
+.button-calendar:hover path {
+  fill: #000000;
+}
+
+.developed-by-link:hover path,
+.button-calendar:active path {
+  fill: #81b3d2;
+}
+
+.developed-by-link:active path,
+.button-calendar path {
+  fill: #A9A9A9;
+}
+
+
+
 /*FORM*/
 .search-modal {
   position: relative;
@@ -316,7 +343,7 @@ img {
 
   width: 568px;
   margin-left: -285px;
-  padding: 60px 55px 70px 55px;
+  padding: 55px 55px 56px 55px;
 
   background-color: #FFFFFF;
 }
@@ -326,17 +353,30 @@ img {
   font-weight: bold;
   line-height: 26px;
   position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 29px;
 }
 
-.search-item input {
-  background-color: #F2F2F2;
+.label-check-in {
+  width: 88px;
+}
 
+.label-check-out {
+  width: 92px;
+}
+
+.search-data-input {
+  background-color: #F2F2F2;
+  border: 2px solid #F2F2F2;
   font: inherit;
 }
 
 .input-check-in,
 .input-check-out {
-  width: 345px;
+  width: 346px;
+  padding-left: 10px;
+  height: 38px;
 }
 
 .input-check-in {
@@ -364,15 +404,33 @@ input::placeholder {
 
 .button-calendar {
   position: absolute;
-  left: 50%;
+  left: 95%;
   top: 0;
-  margin-left: -10px;
+  margin-left: -11px;
+  margin-top: 6px;
   background-color: #F2F2F2;
 }
 
+.search-data-adults,
+.search-data-kids {
+  width: 50%;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.search-data-kids .search-data-label {
+  margin-left: 51px;
+  margin-top: 1px;
+}
+
+.search-data-adults .search-data-label {
+  margin-top: 1px;
+}
 .data-adults,
 .data-kids {
   width: 38px;
+  height: 38px;
 
   text-align: center;
 }
@@ -401,7 +459,7 @@ input::placeholder {
 
   font-size: 14px;
   line-height: 21px;
-  padding: 27px 0px 35px 80px;
+  padding: 27px 0px 11px 69px;
   background-position: 0px -295px;
 }
 
@@ -412,19 +470,26 @@ input::placeholder {
   border: none;
 }
 
-.filter-form fieldset:nth-child(1),
-.filter-form fieldset:nth-child(2){
-  width: 300px;
+.filter-form fieldset:nth-child(2) {
+  width: 255px;
 }
 
 .filter-form fieldset:nth-child(3) {
-  width: 580px;
+  width: 326px;
+}
+
+.filter-price fieldset {
+  width: 320px;
   margin-left: auto;
 }
 
 .filter-form legend {
   font-size: 16px;
   font-weight: bold;
+}
+
+.fieldset-list {
+  margin-top: 21px;
 }
 
 /* стоимость*/
@@ -440,6 +505,7 @@ input::placeholder {
   font-weight: 600;
   font-size: 16px;
   line-height: 21px;
+  text-align: left;
 }
 
 .price-controls {
@@ -479,8 +545,9 @@ input::placeholder {
 
 .price-controls .min-price,
 .price-controls .max-price {
-  width: 90px;
-  padding-left: 32px;
+  width: 80px;
+  margin-left: 66px;
+  margin-top: -2px;
 }
 
 .price-controls input {
@@ -497,7 +564,7 @@ input::placeholder {
 .range-controls {
   position: relative;
 
-  margin-bottom: 32px;
+  margin-bottom: 33px;
 }
 
 .range-controls .scale {
@@ -516,10 +583,9 @@ input::placeholder {
 .range-toggle {
   position: absolute;
   top: -9px;
-
+  box-sizing: content-box;
   width: 4px;
   height: 4px;
-
   background: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
@@ -536,12 +602,13 @@ input::placeholder {
 }
 
 .range-toggle-max {
-  left: 80%;
+  left: 79%;
 }
 
 .button-transparent {
   display: block;
-  margin: 0 auto;
+  margin-left: 84px;
+  width: 137px;
   padding: 6px 35px;
 
   font-size: 14px;
@@ -575,8 +642,10 @@ input::placeholder {
 }
 
 .filter-item {
-  margin-bottom: 19px;
-  padding-left: 45px;
+  margin-bottom: 25px;
+  margin-top: 16px;
+  padding-left: 39px;
+  display: flex;
 }
 
 .filter-item input {
@@ -611,7 +680,7 @@ input::placeholder {
 
   position: absolute;
   top: 4px;
-  left: -38px;
+  left: -36px;
 
   width: 27px;
   height: 23px;
@@ -639,7 +708,7 @@ input::placeholder {
 .filter-price {
   width: 480px;
 
-  text-align: right;
+  text-align: left;
 }
 
 /*INDEX*/
@@ -704,7 +773,7 @@ input::placeholder {
 
 .reason-subitem {
   width: 400px;
-  padding: 162px 47px 83px 47px;
+  padding: 162px 47px 80px 47px;
 }
 
 .reason-item,
@@ -780,8 +849,7 @@ input::placeholder {
   padding: 48px 42px 57px 42px;
 }
 
-.main-reason-item h3,
-.main-reason-item p {
+.main-reason-item h3 {
   margin-bottom: 21px;
 }
 
@@ -790,7 +858,13 @@ input::placeholder {
 }
 
 .main-reason-item p {
-  margin: 23px 10px 0 10px;
+  margin: 24px 10px 0 10px;
+}
+
+.main-reason-item .reason-item-blue-details {
+  margin-top: 22px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .main-reason-img {
@@ -807,9 +881,15 @@ input::placeholder {
   background-color: #EEEEEE;
 }
 
+.main-reason-item .gray-item-details {
+  margin-top: 23px;
+  margin-left: 21px;
+  margin-right: 35px;
+}
+
 .search-details {
   width: 568px;
-  margin: 51px 315px 0 315px;
+  margin: 58px 315px 0 315px;
 
   background-color: #FFFFFF;
 }
@@ -817,8 +897,8 @@ input::placeholder {
 .search-details p {
   text-align: center;
 
-  line-height: 36px;
-  margin-bottom: 18px;
+  line-height: 24px;
+  margin-bottom: 30px;
 }
 
 .search-info-title {
@@ -885,7 +965,8 @@ input::placeholder {
   fill: #000000;
 }
 
-.sort-direction-button:active {
+.sort-direction-button:active,
+.sort-direction-button-current {
   fill: #81B3D2;
 }
 
