@@ -135,10 +135,6 @@ img {
   font-size: 19px;
 }
 
-.button-remove {
-  font-size: 12px;
-}
-
 .button-add:hover,
 .button-remove:hover {
   color: #000000;
@@ -573,7 +569,7 @@ img {
   margin-top: 6px;
   margin-left: -11px;
 
-  background-color: #F2F2F2;
+  background: transparent;
 }
 
 .search-data-adults,
@@ -613,6 +609,10 @@ img {
 .search-info {
   display: flex;
   flex-direction: column;
+}
+
+.search-map {
+  position: relative;
 }
 
 .search-map img {
