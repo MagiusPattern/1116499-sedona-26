@@ -3,8 +3,8 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Главная | Туристический городок Седона</title>
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize.min.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
 	</head>
 	<body>
 		<div class="container">
@@ -191,29 +191,6 @@
         	</p>
       </footer>
     </div>
-		<script>
-			var link = document.querySelector(".search-details .button-brown");
-			var popup = document.querySelector(".search-modal");
-      var form = popup.querySelector(".search-form");
-      var datein = popup.querySelector(".input-check-in");
-      var dateout = popup.querySelector(".input-check-out");
-      var adults = popup.querySelector(".data-adults");
-      var kids = popup.querySelector(".data-kids");
-
-      link.addEventListener("click", function (evt) {
-				evt.preventDefault();
-        popup.classList.toggle("open");
-        popup.classList.remove("open-error");
-			});
-      form.addEventListener("submit", function (evt) {
-        evt.preventDefault();
-        if (!datein.value || !dateout.value || !adults.value || !kids.value) {
-          evt.preventDefault();
-          popup.classList.remove("open-error");
-          popup.offsetWidth = popup.offsetWidth;
-          popup.classList.add("open-error");
-        }
-      });
-		</script>
+		<script src="js/index-form-script.min.js"></script>
 	</body>
 </html>
