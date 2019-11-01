@@ -836,7 +836,7 @@ img {
 }
 
 .filter-item input {
-  opacity: 0;
+  display: none;
 }
 
 .filter-item label {
@@ -853,8 +853,11 @@ img {
           user-select: none;
 }
 
-.filter-item input:hover + label,
 .filter-item input:focus + label {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.filter-item input:hover + label {
   color: #FFFFFF;
 }
 
