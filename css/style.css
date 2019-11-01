@@ -835,10 +835,6 @@ img {
   padding-left: 39px;
 }
 
-.filter-item input {
-  display: none;
-}
-
 .filter-item label {
   position: relative;
 
@@ -855,6 +851,7 @@ img {
 
 .filter-item input:focus + label {
   color: rgba(255, 255, 255, 0.6);
+  outline: 1px solid #1592E6;
 }
 
 .filter-item input:hover + label {
