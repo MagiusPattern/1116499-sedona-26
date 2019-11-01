@@ -22,10 +22,12 @@ html {
   box-sizing: border-box;
 }
 
-*, *::before,
- *::after {
-   box-sizing: inherit;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
+
 body {
   margin: 0;
   padding: 0;
@@ -834,7 +836,7 @@ img {
 }
 
 .filter-item input {
-  display: none;
+  opacity: 0;
 }
 
 .filter-item label {
@@ -1057,6 +1059,10 @@ img {
 .main-reason-img {
   width: 800px;
   height: 256px;
+}
+
+.main-reason-wrapper {
+  flex-wrap: wrap;
 }
 
 .reasons-list .reason-item-blue {

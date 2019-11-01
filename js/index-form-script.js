@@ -12,7 +12,6 @@ link.addEventListener("click", function (evt) {
   popup.classList.remove("open-error");
 });
 form.addEventListener("submit", function (evt) {
-  evt.preventDefault();
   if (!datein.value || !dateout.value || !adults.value || !kids.value) {
     evt.preventDefault();
     popup.classList.remove("open-error");
