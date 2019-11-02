@@ -366,18 +366,8 @@ img {
 
 @-webkit-keyframes bounce {
   0% {
-    -webkit-transform: translateY(-2000px);
-            transform: translateY(-2000px);
-  }
-
-  70% {
-    -webkit-transform: translateY(30px);
-            transform: translateY(30px);
-  }
-
-  90% {
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
+    -webkit-transform: translateY(-250px);
+            transform: translateY(-250px);
   }
 
   100% {
@@ -388,18 +378,8 @@ img {
 
 @keyframes bounce {
   0% {
-    -webkit-transform: translateY(-2000px);
-            transform: translateY(-2000px);
-  }
-
-  70% {
-    -webkit-transform: translateY(30px);
-            transform: translateY(30px);
-  }
-
-  90% {
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
+    -webkit-transform: translateY(-250px);
+            transform: translateY(-250px);
   }
 
   100% {
@@ -495,12 +475,9 @@ img {
   line-height: 26px;
 }
 
-.label-check-in {
-  width: 88px;
-}
-
+.label-check-in,
 .label-check-out {
-  width: 92px;
+  width: 113px;
 }
 
 .search-data-input {
@@ -517,14 +494,6 @@ img {
   padding-left: 10px;
 
   text-transform: uppercase;
-}
-
-.input-check-in {
-  margin-left: 24px;
-}
-
-.input-check-out {
-  margin-left: 21px;
 }
 
 .search-item input:hover {
