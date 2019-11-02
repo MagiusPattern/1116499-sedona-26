@@ -275,6 +275,13 @@ img {
   background-color: rgba(255,255,255,0.9);
 }
 
+.page-footer:before {
+    content: "";
+    display: inline-block;
+    min-height: 120px;
+    visibility: hidden;
+}
+
 .page-footer-hashtag {
   width: 136px;
 
@@ -1043,7 +1050,7 @@ img {
 }
 
 .main-reason-item h3 {
-  margin: 0 83px 0 83px;
+  margin: 0 82px 0 83px;
 }
 
 .main-reason-item p {
