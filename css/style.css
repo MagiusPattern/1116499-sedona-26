@@ -276,10 +276,12 @@ img {
 }
 
 .page-footer:before {
-    content: "";
     display: inline-block;
-    min-height: 120px;
     visibility: hidden;
+
+    min-height: 120px;
+
+    content: "";
 }
 
 .page-footer-hashtag {
@@ -442,7 +444,6 @@ img {
   display: block;
 
   -webkit-animation: bounce 0.6s;
-
           animation: bounce 0.6s;
 }
 
@@ -1057,6 +1058,9 @@ img {
 }
 
 .search-details {
+  position: relative;
+  z-index: 4;
+
   width: 568px;
   margin: 58px 315px 0 315px;
 
